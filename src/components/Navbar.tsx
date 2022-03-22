@@ -54,8 +54,12 @@ const Navbar: NextPage = () => {
                             </div> */}
 
                             <div className="flex items-center py-2 -mx-1 md:mx-0">
-                                <a className="block w-1/2 px-3 py-2 mx-1 text-sm font-medium leading-5 text-center text-white transition-colors duration-200 transform bg-gray-500 rounded-md hover:bg-blue-600 md:mx-2 md:w-auto" href="#">Iniciar Sessão</a>
-                                <a className="block w-1/2 px-3 py-2 mx-1 text-sm font-medium leading-5 text-center text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-600 md:mx-0 md:w-auto" href="#">Criar Conta</a>
+                                <Link href={'/login'}>
+                                    <a className="block w-1/2 px-3 py-2 mx-1 text-sm font-medium leading-5 text-center text-white transition-colors duration-200 transform bg-gray-500 rounded-md hover:bg-blue-600 md:mx-2 md:w-auto">Iniciar Sessão</a>
+                                </Link>
+                                <Link href={'/'}>
+                                    <a className="block w-1/2 px-3 py-2 mx-1 text-sm font-medium leading-5 text-center text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-600 md:mx-0 md:w-auto">Criar Conta</a>
+                                </Link>
                             </div>
 
                             <div className="mt-3 md:hidden">
