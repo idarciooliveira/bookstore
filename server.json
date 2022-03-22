@@ -1,0 +1,125 @@
+{
+    "categories": [
+        {
+            "id": "01",
+            "description": "Educação Financeira"
+        },
+        {
+            "id": "02",
+            "description": "Economia"
+        },
+        {
+            "id": "03",
+            "description": "Marketing Digital"
+        },
+        {
+            "id": "04",
+            "description": "Programação Web"
+        },
+        {
+            "id": "05",
+            "description": "Construção Civil"
+        },
+        {
+            "id": "06",
+            "description": "Design & Graphic Art"
+        },
+        {
+            "id": "07",
+            "description": "Educação Sexual"
+        },
+        {
+            "id": "08",
+            "description": "Desenvolvimento Pessoal"
+        },
+        {
+            "id": "09",
+            "description": "Gestão Empresarial"
+        },
+        {
+            "id": "10",
+            "description": "Biografia"
+        }
+    ],
+    "product": [
+        {
+            "slug": "quem-pensa-enriquece",
+            "title": "Quem Pensa Enriquece",
+            "author": "Napolion Hill",
+            "description": "Laborum non nostrud consectetur ut. Enim labore elit officia aliquip tempor. Ad enim exercitation ex fugiat duis consequat incididunt. Nulla mollit elit eu incididunt consectetur.",
+            "pageNumber": 185,
+            "uploadAt": "2022-03-19 19:14:05.162+01",
+            "image_url": "data:image/jpeg;base64,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",
+            "category":{
+                "id": "01",
+                "description": "Educação Financeira"
+            }
+        },
+        {
+            "slug": "os-segredos-da-mente-millionaria",
+            "title": "Os Segredos da Mente Milionaria",
+            "author": "Martin Luther",
+            "description": "Laborum non nostrud consectetur ut. Enim labore elit officia aliquip tempor. Ad enim exercitation ex fugiat duis consequat incididunt. Nulla mollit elit eu incididunt consectetur.",
+            "pageNumber": 185,
+            "uploadAt": "2022-03-19 19:14:05.162+01",
+            "image_url": "https://boanova.fbitsstatic.net/img/p/segredos-da-mente-milionaria-os-65711/232566.jpg?w=420&h=420&v=no-change&qs=ignore",
+            "category":{
+                "id": "02",
+                "description": "Desenvolvimento Pessoal"
+            }
+        },
+        {
+            "slug": "12-rules-for-life",
+            "title": "12 Rules for Life",
+            "author": "Jordan Pettersons",
+            "description": "Laborum non nostrud consectetur ut. Enim labore elit officia aliquip tempor. Ad enim exercitation ex fugiat duis consequat incididunt. Nulla mollit elit eu incididunt consectetur.",
+            "pageNumber": 185,
+            "uploadAt": "2022-03-19 19:14:05.162+01",
+            "image_url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fmybookmanager.com%2Fproduct%2F12-rules-for-life-book-by-jordan-peterson-english-paperback%2F&psig=AOvVaw2Vqe1p0piLTwhIoN1TCibI&ust=1648053510541000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNiIpf2T2vYCFQAAAAAdAAAAABAD",
+            "category":{
+                "id": "12",
+                "description": "Desenvolvimento Pessoal"
+            }
+        },
+        {
+            "slug": "beyond-order",
+            "title": "Beyond Order",
+            "author": "Jordan Pettersons",
+            "description": "Laborum non nostrud consectetur ut. Enim labore elit officia aliquip tempor. Ad enim exercitation ex fugiat duis consequat incididunt. Nulla mollit elit eu incididunt consectetur.",
+            "pageNumber": 185,
+            "uploadAt": "2022-03-19 19:14:05.162+01",
+            "image_url": "https://ae01.alicdn.com/kf/H00801e35e4bd42cda47ce3adfb8eca89G/Beyond-Order-12-More-Rules-for-Life-By-Jordan-B-Peterson-Inspirational-Reading-Book-for-Adult.jpg",
+            "category":{
+                "id": "09",
+                "description": "Desenvolvimento Pessoal"
+            }
+        },
+        {
+            "slug": "the-message-to-the-black-man",
+            "title": "The Message to the Black Manr",
+            "author": "Elijah Muhammad",
+            "description": "Laborum non nostrud consectetur ut. Enim labore elit officia aliquip tempor. Ad enim exercitation ex fugiat duis consequat incididunt. Nulla mollit elit eu incididunt consectetur.",
+            "pageNumber": 185,
+            "uploadAt": "2022-03-19 19:14:05.162+01",
+            "image_url": "data:image/jpeg;base64,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",
+            "category":{
+                "id": "05",
+                "description": "Desenvolvimento Pessoal"
+            }
+        },
+        {
+            "slug": "the-mamba-mentality",
+            "title": "The Mamba Mentality",
+            "author": "Koby Bryant",
+            "description": "Laborum non nostrud consectetur ut. Enim labore elit officia aliquip tempor. Ad enim exercitation ex fugiat duis consequat incididunt. Nulla mollit elit eu incididunt consectetur.",
+            "pageNumber": 185,
+            "uploadAt": "2022-03-19 19:14:05.162+01",
+            "image_url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.thirdplacebooks.com%2Fbook%2F9789573284192&psig=AOvVaw28OgzQIGF9wSZvWBO_XZbG&ust=1648053996610000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOj5jt-V2vYCFQAAAAAdAAAAABAZ",
+            "category":{
+                "id": "03",
+                "description": "Biografia"
+            }
+        }
+        
+    ]
+}
