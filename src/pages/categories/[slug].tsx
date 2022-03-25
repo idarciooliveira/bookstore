@@ -11,9 +11,11 @@ const SearchResult: NextPage<HomeProps> = ({ products }) => {
     return (
         <>
             <div className='grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4' >
-                {products && products.map(product => (
+                {products.length > 0 ? products.map(product => (
                     <Product key={product.slug} product={product} />
-                ))}
+                )) : <p className='text-xl text-white'>
+                    Nenhum livro encontrado...
+                </p>}
             </div>
         </>
     )
