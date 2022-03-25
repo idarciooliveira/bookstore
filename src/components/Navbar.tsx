@@ -1,7 +1,22 @@
 import type { NextPage } from 'next'
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { KeyboardEvent, useState } from 'react';
 
 const Navbar: NextPage = () => {
+
+    const router = useRouter();
+
+    const [searchQuery, setSearchQuery] = useState('');
+
+    const handleOnSearch = (event: KeyboardEvent) => {
+        if (event.key == 'Enter' && searchQuery.length > 0) {
+            setSearchQuery('')
+            router.push(`/search/${searchQuery}`)
+        }
+    }
+
+
     return (
         <>
             <style>
@@ -31,7 +46,10 @@ const Navbar: NextPage = () => {
                                             </svg>
                                         </span>
 
-                                        <input type="text" className="w-full py-2 pl-10 pr-4 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Pesquisar Livros" />
+                                        <input type="text" className="w-full py-2 pl-10 pr-4 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Pesquisar Livros"
+                                            value={searchQuery}
+                                            onChange={(event) => setSearchQuery(event.target.value)}
+                                            onKeyUp={(event) => handleOnSearch(event)} />
                                     </div>
                                 </div>
                             </div>
@@ -70,7 +88,9 @@ const Navbar: NextPage = () => {
                                         </svg>
                                     </span>
 
-                                    <input type="text" className="w-full py-2 pl-10 pr-4 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Pesquisar Livros" />
+                                    <input type="text" className="w-full py-2 pl-10 pr-4 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300"
+                                        placeholder="Pesquisar Livros"
+                                    />
                                 </div>
                             </div>
                         </div>
