@@ -21,7 +21,8 @@ const Home: NextPage<HomeProps> = ({ products }) => {
 
 export default Home;
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getServerSideProps: GetServerSideProps = async ({ }) => {
+
   const { data } = await api.get<ProductProps>('/products')
 
   return {

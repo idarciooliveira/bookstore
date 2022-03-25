@@ -13,5 +13,6 @@ export type ProductProps = {
 
 export type categoryProps = {
     id: string,
-    description: string
+    description: string,
+    slug: string
 }

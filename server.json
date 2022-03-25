@@ -2,43 +2,53 @@
     "categories": [
         {
             "id": "01",
-            "description": "Educação Financeira"
+            "description": "Educação Financeira",
+            "slug": "educacao-financeira"
         },
         {
             "id": "02",
-            "description": "Economia"
+            "description": "Economia",
+            "slug": "economia"
         },
         {
             "id": "03",
+            "slug": "marketing-digital",
             "description": "Marketing Digital"
         },
         {
             "id": "04",
+            "slug": "programacao-web",
             "description": "Programação Web"
         },
         {
             "id": "05",
+            "slug": "construcao-civil",
             "description": "Construção Civil"
         },
         {
             "id": "06",
+            "slug": "design-grafic-art",
             "description": "Design & Graphic Art"
         },
         {
             "id": "07",
+            "slug": "educacao-sexual",
             "description": "Educação Sexual"
         },
         {
             "id": "08",
+            "slug": "desenvolvimento-pessoal",
             "description": "Desenvolvimento Pessoal"
         },
         {
             "id": "09",
+            "slug": "gestao-empresarial",
             "description": "Gestão Empresarial"
         },
         {
             "id": "10",
-            "description": "Biografia"
+            "description": "Biografia",
+            "slug": "biografia"
         }
     ],
     "products": [
@@ -52,7 +62,8 @@
             "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80",
             "category":{
                 "id": "01",
-                "description": "Educação Financeira"
+                "description": "Educação Financeira",
+                "slug": "educacao-financeira"
             }
         },
         {
@@ -65,6 +76,7 @@
             "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80",
             "category":{
                 "id": "02",
+                "slug": "desenvolvimento-pessoal",
                 "description": "Desenvolvimento Pessoal"
             }
         },
@@ -78,6 +90,7 @@
             "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80",
             "category":{
                 "id": "12",
+                "slug": "desenvolvimento-pessoal",
                 "description": "Desenvolvimento Pessoal"
             }
         },
@@ -91,6 +104,7 @@
             "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80",
             "category":{
                 "id": "09",
+                "slug": "desenvolvimento-pessoal",
                 "description": "Desenvolvimento Pessoal"
             }
         },
@@ -104,6 +118,7 @@
             "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80",
             "category":{
                 "id": "05",
+                "slug": "desenvolvimento-pessoal",
                 "description": "Desenvolvimento Pessoal"
             }
         },
@@ -117,7 +132,8 @@
             "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80",
             "category":{
                 "id": "03",
-                "description": "Biografia"
+                "description": "Biografia",
+                "slug": "biografia"
             }
         },
         {
@@ -130,7 +146,8 @@
             "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80",
             "category":{
                 "id": "03",
-                "description": "Biografia"
+                "description": "Biografia",
+                "slug": "biografia"
             }
         }
         
