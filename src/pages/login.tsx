@@ -9,7 +9,7 @@ const Login = () => {
 
     }
     return (
-        <div className="w-full max-w-sm p-6 m-auto bg-white rounded-md shadow-md dark:bg-gray-800">
+        <div className="mt-12 w-full max-w-sm p-6 m-auto bg-white rounded-md shadow-md dark:bg-gray-800">
             <h1 className="text-3xl font-semibold text-center text-gray-700 dark:text-white">Bookstore</h1>
 
             <form className="mt-6">
