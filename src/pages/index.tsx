@@ -1,13 +1,15 @@
-import type { GetServerSideProps, NextPage } from 'next'
+import type { GetServerSideProps } from 'next'
+import { ProductProps } from '../types/DomainProps';
+
+import Layout from '../components/Layout';
 import Product from '../components/Product';
 import api from '../services/api';
-import { ProductProps } from '../types/DomainProps';
 
 type HomeProps = {
   products: ProductProps[]
 }
 
-const Home: NextPage<HomeProps> = ({ products }) => {
+const Home = ({ products }: HomeProps) => {
   return (
     <>
       <div className='grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4' >
@@ -18,6 +20,8 @@ const Home: NextPage<HomeProps> = ({ products }) => {
     </>
   )
 }
+
+Home.layout = Layout;
 
 export default Home;
 

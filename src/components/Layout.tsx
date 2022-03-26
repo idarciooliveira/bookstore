@@ -1,10 +1,10 @@
-import { NextPage } from "next";
+import { LayoutProps } from "../types/pageWithLayout";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import SideBar from "./Sidebar";
 
 
-const Layout: NextPage = ({ children }) => {
+const Layout: LayoutProps = ({ children }) => {
     return (
         <>
             <Navbar />

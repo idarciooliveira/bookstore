@@ -1,13 +1,15 @@
-import type { GetServerSideProps, NextPage } from 'next'
-import Product from '../../components/Product';
-import api from '../../services/api';
+import type { GetServerSideProps } from 'next'
 import { ProductProps } from '../../types/DomainProps';
 
-type HomeProps = {
+import Layout from '../../components/Layout';
+import Product from '../../components/Product';
+import api from '../../services/api';
+
+type SearchResultProps = {
     products: ProductProps[]
 }
 
-const SearchResult: NextPage<HomeProps> = ({ products }) => {
+const SearchResult = ({ products }: SearchResultProps) => {
     return (
         <>
             <div className='grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4' >
@@ -20,6 +22,8 @@ const SearchResult: NextPage<HomeProps> = ({ products }) => {
         </>
     )
 }
+
+SearchResult.layout = Layout;
 
 export default SearchResult;
 

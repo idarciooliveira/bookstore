@@ -1,11 +1,20 @@
 import '../styles/globals.css'
+import { ReactElement } from 'react'
 import type { AppProps } from 'next/app'
-import Layout from '../components/Layout'
 import { SessionProvider } from "next-auth/react"
+import PageWithLayoutType from '../types/pageWithLayout'
 
-function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
+type AppLayoutProps = AppProps & {
+  Component: PageWithLayoutType
+  pageProps: any
+}
+
+function MyApp({ Component, pageProps }: AppLayoutProps) {
+
+  const Layout = Component.layout || ((children: ReactElement) => <>{children}</>)
+
   return (
-    <SessionProvider session={session}>
+    <SessionProvider session={pageProps.session}>
       <Layout>
         <Component {...pageProps} />
       </Layout>

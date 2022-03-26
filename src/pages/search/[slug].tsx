@@ -1,14 +1,16 @@
-import type { GetServerSideProps, NextPage } from 'next'
-import Product from '../../components/Product';
-import api from '../../services/api';
+import type { GetServerSideProps } from 'next'
 import { ProductProps } from '../../types/DomainProps';
 
-type HomeProps = {
+import Layout from '../../components/Layout';
+import Product from '../../components/Product';
+import api from '../../services/api';
+
+type SearchProps = {
     searchQuery: string
     products: ProductProps[]
 }
 
-const Search: NextPage<HomeProps> = ({ products, searchQuery }) => {
+const Search = ({ products, searchQuery }: SearchProps) => {
     return (
         <>
             <p className='text-xl text-white'>Resultados Encontrados: {products.length}</p>
@@ -21,6 +23,8 @@ const Search: NextPage<HomeProps> = ({ products, searchQuery }) => {
         </>
     )
 }
+
+Search.layout = Layout;
 
 export default Search;
 
