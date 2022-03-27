@@ -3,6 +3,7 @@ import { ProductProps } from '../../types/DomainProps';
 
 import Layout from '../../components/Layout';
 import api from '../../services/api';
+import { signIn, signOut, useSession } from "next-auth/react"
 
 type BookDetailProps = {
     searchQuery: string
@@ -10,6 +11,8 @@ type BookDetailProps = {
 }
 
 const BookDetail = ({ product }: BookDetailProps) => {
+
+    const session = useSession();
     return (
         <>
             <section className="text-gray-600 body-font overflow-hidden">
@@ -31,7 +34,8 @@ const BookDetail = ({ product }: BookDetailProps) => {
                                 <span className="ml-auto text-white-900">{product.pageNumber}</span>
                             </div>
                             <div className="flex">
-                                <button className="w-full mt-2 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Download</button>
+                                {session.data ? <button className="w-full mt-2 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Download</button>
+                                    : <button onClick={() => signIn()} className="w-full mt-2 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Criar conta para poder fazer o Download</button>}
                             </div>
                         </div>
                         <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src={product.image_url} />

@@ -3,9 +3,13 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { KeyboardEvent, useState } from 'react';
 
+import { signIn, signOut, useSession } from "next-auth/react"
+
+
 const Navbar: NextPage = () => {
 
     const router = useRouter();
+    const session = useSession();
 
     const [searchQuery, setSearchQuery] = useState('');
 
@@ -72,12 +76,9 @@ const Navbar: NextPage = () => {
                             </div> */}
 
                             <div className="flex items-center py-2 -mx-1 md:mx-0">
-                                <Link href={'/login'}>
-                                    <a className="block w-1/2 px-3 py-2 mx-1 text-sm font-medium leading-5 text-center text-white transition-colors duration-200 transform bg-gray-500 rounded-md hover:bg-blue-600 md:mx-2 md:w-auto">Iniciar Sessão</a>
-                                </Link>
-                                <Link href={'/'}>
-                                    <a className="block w-1/2 px-3 py-2 mx-1 text-sm font-medium leading-5 text-center text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-600 md:mx-0 md:w-auto">Criar Conta</a>
-                                </Link>
+                                {session.data ? `${session.data.user?.email}` :
+                                    <button onClick={() => signIn('email')} className="block w-1/2 px-3 py-2 mx-1 text-sm font-medium leading-5 text-center text-white transition-colors duration-200 transform bg-gray-500 rounded-md hover:bg-blue-600 md:mx-2 md:w-auto">Iniciar Sessão</button>}
+                                {session.data && <button onClick={() => signOut()} className="block w-1/2 px-3 py-2 mx-1 text-sm font-medium leading-5 text-center text-white transition-colors duration-200 transform bg-gray-500 rounded-md hover:bg-blue-600 md:mx-2 md:w-auto">Sair</button>}
                             </div>
 
                             <div className="mt-3 md:hidden">

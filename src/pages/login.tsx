@@ -1,22 +1,25 @@
-import { useSession, signIn, signOut } from "next-auth/react"
+import { signIn } from "next-auth/react"
+import { FormEvent, useState } from "react";
 import EmptyLayout from "../components/EmptyLayout";
 
 const Login = () => {
 
-    const session = useSession();
+    const [email, setEmail] = useState('')
 
-    const handleSignIn = () => {
-
+    const handleOnSubmit = (event: FormEvent) => {
+        event.preventDefault();
+        signIn()
     }
     return (
         <div className="mt-12 w-full max-w-sm p-6 m-auto bg-white rounded-md shadow-md dark:bg-gray-800">
             <h1 className="text-3xl font-semibold text-center text-gray-700 dark:text-white">Bookstore</h1>
 
-            <form className="mt-6">
+            <form onSubmit={handleOnSubmit} className="mt-6">
                 <div>
                     <label htmlFor="email" className="block text-sm text-gray-800 dark:text-gray-200">Email</label>
                     <input type="text"
-                        className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40" />
+                        className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                        value={email} onChange={(event) => setEmail(event.target.value)} />
                 </div>
 
                 <div className="mt-4">
